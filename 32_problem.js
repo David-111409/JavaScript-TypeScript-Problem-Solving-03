@@ -7,3 +7,8 @@ String.prototype.zFill = function(width){
 }
 
 console.log("12".zFill(5));
+
+String.prototype.sayLoveMe = function () {
+    return `I love you, ${this}`;
+};
+console.log("dawoud".sayLoveMe());

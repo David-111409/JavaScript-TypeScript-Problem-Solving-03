@@ -13,3 +13,13 @@ console.log(sum(1)(2)(3)(4).value);
 console.log(sum(1, 2, 3, 4).value);
 console.log(sum(4)(6)(8)(10).value);
 console.log(sum(4, 6, 8, 10).value);
+
+var x = Math.floor(Math.random());
+// console.log(x);
+if (x > .5 /* and test for x === 0 */) {
+    var x = 1;
+} else {
+    var x = 2;
+}
+
+console.log(x); // x output: 2 as var is not a block scope.

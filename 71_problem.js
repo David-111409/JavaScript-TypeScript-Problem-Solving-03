@@ -6,6 +6,10 @@ sumMissingNumbers([10, 7, 5, 3, 1]) ➞ 29
 
 sumMissingNumbers([10, 20, 30, 40, 50, 60]) ➞ 1575
  */
+const ar = [1, 2 ,3, 4, 5, 6];
+const sum = ar.reduce((acc, cur) => acc + cur, 0);
+console.log(sum);
+
 const sumMissingNumbers = (ar) => {
     let start = ar[0],
         end = ar[0],

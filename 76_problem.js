@@ -9,8 +9,8 @@ function expandedForm(n) {
         n = Math.floor(n / 10);
         i++;
     }
-    
-    return res.reverse().join(" + ");
+    res.reverse();
+    return res.join(" + ");
 }
 
 console.log(expandedForm(12) === "10 + 2");

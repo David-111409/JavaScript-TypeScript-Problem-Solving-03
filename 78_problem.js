@@ -22,3 +22,19 @@ var isPalindrome = function (s) {
 };
 
 console.log(isPalindrome("A man, a plan, a canal: Panama"));
+
+var reverse = function (x) {
+    // [-2 ** 31, 2 ** 31 - 1]
+    let res;
+    if (x < 0) {
+        res = -String(-x).split("").reverse().join("");
+    } else res = +String(x).split("").reverse().join("");
+    if (res >= -2147483648 && res <= 2147483647) {
+        return res;
+    }
+    return 0;
+};
+
+console.log(reverse(-123));
+console.log(reverse(123));
+console.log(reverse(1534236469));

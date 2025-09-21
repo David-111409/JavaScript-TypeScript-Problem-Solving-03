@@ -38,3 +38,37 @@ var reverse = function (x) {
 console.log(reverse(-123));
 console.log(reverse(123));
 console.log(reverse(1534236469));
+
+/**
+ sumMissingNumbers([4, 3, 8, 1, 2]) ➞ 18
+// 5 + 6 + 7 = 18
+
+sumMissingNumbers([17, 16, 15, 10, 11, 12]) ➞ 27
+// 13 + 14 = 27
+
+sumMissingNumbers([1, 2, 3, 4, 5]) ➞ 0
+// No Missing Numbers (i.e. all numbers in [1, 5] are present in the list)
+ */
+
+function sumMissingNumbers(ar) {
+    let big = ar[0],
+        small = ar[0],
+        l = ar.length;
+    (st = new Set()), (sum = 0);
+
+    for (let i = 0; i < l; i++) {
+        st.add(ar[i]);
+        if (ar[i] < small) small = ar[i];
+        if (ar[i] > big) big = ar[i];
+    }
+
+    for (let i = small + 1; i < big; i++) if (!st.has(i)) sum += i;
+
+    return sum;
+}
+
+console.log(sumMissingNumbers([1, 2, 3, 4, 5]), 0);
+console.log(sumMissingNumbers([4, 3, 8, 1, 2]), 18);
+console.log(sumMissingNumbers([17, 16, 15, 10, 11, 12]), 27);
+console.log(sumMissingNumbers([-1, -4, -3, -2, -6, -8]), -12);
+

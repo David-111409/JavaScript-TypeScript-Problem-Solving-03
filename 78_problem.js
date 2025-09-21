@@ -8,3 +8,9 @@ let reveseString = function (ar) {
 s = ["h", "e", "l", "o", "n"];
 reveseString(s);
 console.log(s);
+
+
+var isPowerOfTwo = function(n) {
+    let p = Math.log2(n);
+    return p === parseInt(p);
+};

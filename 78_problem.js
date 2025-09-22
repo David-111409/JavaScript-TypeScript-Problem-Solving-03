@@ -72,3 +72,7 @@ console.log(sumMissingNumbers([4, 3, 8, 1, 2]), 18);
 console.log(sumMissingNumbers([17, 16, 15, 10, 11, 12]), 27);
 console.log(sumMissingNumbers([-1, -4, -3, -2, -6, -8]), -12);
 
+var lengthOfLastWord = function(s) {
+    return s.trim().split(' ').at(-1).length;
+    
+};

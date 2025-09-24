@@ -39,3 +39,10 @@ console.log(arithmeticOperation("122 / 0"), -1);
 console.log(arithmeticOperation("10 * 20"), 200);
 console.log(arithmeticOperation("10 - 10"), 0);
 console.log(arithmeticOperation("10 - 12"), -2);
+
+let obj = { name: "one", age: 20 };
+let obj2 = {};
+obj2.__proto__ = obj;
+// obj2.age = 28;
+
+console.log(obj2.age, obj.name,  obj.__proto__ == obj2.__proto__);

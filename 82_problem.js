@@ -13,3 +13,9 @@ var addDigits = function (num) {
 
     return num;
 };
+
+var reverseWords = function (s) {
+    return s.split(/\s+/).filter(Boolean).reverse().join(" ");
+};
+
+console.log(reverseWords("  hello world  "));

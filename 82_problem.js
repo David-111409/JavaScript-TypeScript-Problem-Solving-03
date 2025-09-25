@@ -20,3 +20,33 @@ var reverseWords = function (s) {
 };
 
 console.log(reverseWords("  hello world  "));
+// const os = require("os");
+// console.log(os.platform());
+
+// const { PI, pow } = Math;
+// console.log(PI, pow(2, 3));
+
+// var countDigitOne = function (n) {
+//     let count = 0;
+//     for (let i = 1; i <= n; i++) {
+//         count += `${i}`.split("").filter((el) => el === "1").length;
+//     }
+//     return count;
+// };
+
+// console.log(countDigitOne(13));
+
+var findMedianSortedArrays = function (nums1, nums2) {
+    let big = [...nums1, ...nums2].sort((a, b) => a - b);
+    let l = big.length;
+    let half = Math.floor(l / 2);
+    if (l % 2 === 1) return big[Math.floor(l / 2)];
+    return (big[half] + big[half - 1]) / 2;
+};
+
+console.log(findMedianSortedArrays([1, 3], [2, 4]));
+
+var isPowerOfFour = function (n) {
+    let res = Math.log2(n) / 2;
+    return parseInt(res) === res;
+};

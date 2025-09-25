@@ -48,5 +48,33 @@ console.log(findMedianSortedArrays([1, 3], [2, 4]));
 
 var isPowerOfFour = function (n) {
     let res = Math.log2(n) / 2;
-    return parseInt(res) === res;
+    return Number.isInteger(res);
+    // return parseInt(res) === res;
 };
+const d = new Date(2025, 8, 26);
+console.log(d.getDate(), d.getMonth(), d.getFullYear()); // 17
+console.log(d.getDay());
+
+const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+];
+const specificDate = new Date("December 25, 1995");
+const weekday = specificDate.getDay();
+
+console.log(days[weekday]);
+// Output: 1, because December 25, 1995 was a Monday
+
+let n = 9.12;
+console.log(Math.ceil(9.12));
+console.log(Math.ceil(-9.12));
+console.log(Number.isInteger(10));
+console.log(Number.isInteger(11));
+
+let oct = 0o16;
+console.log(oct);

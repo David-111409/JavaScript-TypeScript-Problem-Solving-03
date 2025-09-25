@@ -15,6 +15,7 @@ var addDigits = function (num) {
 };
 
 var reverseWords = function (s) {
+    //return s.trim().split(/\s+/).reverse().join(" ");
     return s.split(/\s+/).filter(Boolean).reverse().join(" ");
 };
 

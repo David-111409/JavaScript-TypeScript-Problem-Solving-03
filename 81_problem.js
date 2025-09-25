@@ -46,3 +46,9 @@ obj2.__proto__ = obj;
 // obj2.age = 28;
 
 console.log(obj2.age, obj.name,  obj.__proto__ == obj2.__proto__);
+
+var addDigits = function (num) {
+    return 1 + ((num - 1) % 9);
+};
+
+console.log(addDigits(22));

@@ -33,3 +33,18 @@ var isPowerOfThree = function (n) {
 };
 
 console.log(isPowerOfThree(243));
+
+var isHappy = function (n) {
+    let sum = 0;
+
+    while (n !== 1 && n !== 4) {
+        while (n) {
+            sum += (n % 10) ** 2;
+            n = Math.floor(n / 10);
+        }
+        n = sum;
+        sum = 0;
+    }
+
+    return n === 1;
+};

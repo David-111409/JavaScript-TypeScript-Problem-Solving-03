@@ -14,7 +14,7 @@ var moveZeroes = function (nums) {
             pos++;
         }
     }
-    while (pos < nums.length) {
+    while (pos < l) {
         nums[pos] = 0;
         pos++;
     }
@@ -24,3 +24,12 @@ var moveZeroes = function (nums) {
 let nums = [1, 2, 0, 3, 0, 5, 0, 2, 0, 1];
 moveZeroes(nums);
 console.log(nums);
+
+var isPowerOfThree = function (n) {
+    while (n >= 3) {
+        n = n / 3;
+    }
+    return n === 1;
+};
+
+console.log(isPowerOfThree(243));

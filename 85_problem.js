@@ -1,3 +1,4 @@
+const log = console.log;
 log(0xe);
 log(0o14);
 // function sum(a, b) {
@@ -37,3 +38,23 @@ log(
 );
 
 log(calc(20, 5, (a, b) => a / b));
+
+
+function format(mes, formatCallBack) {
+    return formatCallBack(mes);
+}
+
+function makeJson(mes) {
+    return `{"message": "${mes}"}`;
+}
+function makeHtml(mes) {
+    return `<div>${mes}</div>`;
+}
+
+log(format("hello world", makeHtml));
+log(format("hello world", makeJson));
+
+const ar = ["red", "green", "blue"];
+ar.forEach(function (el, ind) {
+    console.log(ind, el);
+});

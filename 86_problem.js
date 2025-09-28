@@ -15,3 +15,6 @@ var countPrimes = function (n) {
     }
     return count;
 };
+
+let colors = ["red", "blue", "yellow"];
+console.log(colors.includes("red", -2));

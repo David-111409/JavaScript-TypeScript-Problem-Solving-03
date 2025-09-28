@@ -18,3 +18,9 @@ var countPrimes = function (n) {
 
 let colors = ["red", "blue", "yellow"];
 console.log(colors.includes("red", -2));
+
+var countSegments = function(s) {
+    s = s.trim();
+    if (s === '') return 0;
+    return s.split(/\s+/).length;
+};

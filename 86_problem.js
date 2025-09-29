@@ -42,3 +42,9 @@ var checkPerfectNumber = function(num) {
     }
     return sum === num;
 };
+
+let n = " 1234z2 ";
+console.log(Number(n), parseInt(n));
+console.log(Boolean(" ")); // true
+console.log(Number(null)); // 0
+console.log(Number(undefined)); // NaN

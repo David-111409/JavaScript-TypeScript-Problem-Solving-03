@@ -14,3 +14,8 @@ if (question === "ECMAScript") {
 } else {
   console.log("You don’t know? ECMAScript!");
 }
+
+// let a;
+// false || (a = 5);
+// true || (a = 5 * 2);
+// console.log(a);

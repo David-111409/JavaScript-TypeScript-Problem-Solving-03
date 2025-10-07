@@ -17,3 +17,23 @@ var isPalindrome = function(n) {
     return nString.split("").reverse().join("") === nString;
     
 };
+
+function pairSum(ar, target) {
+  for (let i = 0; i < ar.length - 1; i++) {
+    for (let j = i + 1; j < ar.length; j++) {
+      if ((ar[i] + ar[j] === target)) return [i, j];
+    }
+  }
+  //   let map = new Map();
+  //   for (let i = 0; i < ar.length; i++) {
+  //     let c = target - ar[i];
+  //     if (map.has(c)) {
+  //       return [map.get(c), i];
+  //     }
+  //     map.set(ar[i], i);
+  //   }
+}
+
+console.log(pairSum([2, 0, 1, 3], 4));
+
+// time : o(n), space : o(n)

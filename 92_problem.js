@@ -29,3 +29,12 @@ function toBoolArray(str) {
 
 console.log(toBoolArray("loves"));
 console.log(toBoolArray("tesh"));
+
+function isOddOrEven(n) {
+  let ar = ["even", "odd"];
+  return ar[n % 2];
+}
+
+for (let i = 0; i < 10; i += 1) {
+  console.log(isOddOrEven(i));
+}

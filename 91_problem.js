@@ -10,3 +10,10 @@ const isPalindromeNumber = (n) => {
 
 console.log(isPalindromeNumber(112211));
 console.log(isPalindromeNumber(1122));
+
+
+var isPalindrome = function(x) {
+    let nString = String(x);
+    return nString.split("").reverse().join("") === nString;
+    
+};

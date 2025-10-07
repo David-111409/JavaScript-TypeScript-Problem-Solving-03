@@ -56,3 +56,14 @@ for (let i = 0; i < 5; i++) {
   let i = 5;
   console.log(i);
 }
+
+function big() {
+  var x = 2;
+  function test() {
+    var x = 10;
+  }
+  test();
+  console.log(x);
+}
+
+big(); // 2 : the var is a function scope

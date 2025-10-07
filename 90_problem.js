@@ -50,3 +50,9 @@ Example 3:
 Input: nums = [3,3], target = 6
 Output: [0,1]
  */
+for (let i = 0; i < 5; i++) {
+  // let i = i + 2;
+  // i = i + 2;
+  let i = 5;
+  console.log(i);
+}

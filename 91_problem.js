@@ -37,3 +37,20 @@ function pairSum(ar, target) {
 console.log(pairSum([2, 0, 1, 3], 4));
 
 // time : o(n), space : o(n)
+
+function show() {
+  {
+    // var x = 10;
+    // var y = 11;
+
+    // let x = 10;
+    // let y = 10;
+
+    (function () {
+      var x = 10;
+      var y = 11;
+    })();
+  }
+  console.log(x, y);
+}
+show();

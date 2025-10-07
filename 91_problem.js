@@ -12,8 +12,8 @@ console.log(isPalindromeNumber(112211));
 console.log(isPalindromeNumber(1122));
 
 
-var isPalindrome = function(x) {
-    let nString = String(x);
+var isPalindrome = function(n) {
+    let nString = String(n);
     return nString.split("").reverse().join("") === nString;
     
 };

@@ -38,3 +38,29 @@ function isOddOrEven(n) {
 for (let i = 0; i < 10; i += 1) {
   console.log(isOddOrEven(i));
 }
+
+
+var thirdMax = function (nums) {
+  let first = -Infinity;
+  let sec = -Infinity;
+  let thrd = -Infinity;
+
+  for (let n of nums) {
+    if (n > first) {
+      thrd = sec;
+      sec = first;
+      first = n;
+    } else if (n > sec && n !== first) {
+      thrd = sec;
+      sec = n;
+    } else if (n > thrd && n !== sec && n !== first) {
+      thrd = n;
+    }
+  }
+    if (thrd !== -Infinity) return thrd;
+
+    return first;
+};
+
+let nums = /*[3, 2, 1]*/ [1,1,1, 2, 2, 5, 3, 5, 5];
+console.log(thirdMax(nums));

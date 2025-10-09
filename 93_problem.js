@@ -15,3 +15,5 @@ var bitwiseComplement = function(n) {
     let mask = (1 << n.toString(2).length) - 1;
     return mask ^ n;
 };
+
+console.log( (0 ?? 1) || 2 ); // output: 2

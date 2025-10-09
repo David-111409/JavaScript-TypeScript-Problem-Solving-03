@@ -10,3 +10,8 @@ var findComplement = function (num) {
 };
 
 console.log(findComplement(5));
+
+var bitwiseComplement = function(n) {
+    let mask = (1 << n.toString(2).length) - 1;
+    return mask ^ n;
+};

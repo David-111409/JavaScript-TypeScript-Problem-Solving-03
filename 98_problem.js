@@ -23,12 +23,32 @@
 
 let myString = "AaBbcdefG123!234%^&*";
 // let re = /[a-z]/g;
+
 // let re = /[^a-z]/g;
+
 // let re = /[A-Z]/g;
+
 // let re = /[^A-Z]/g;
+
 // let re = /[ace]/gi;
+
 // let re = /[^ace]/ig;
+
 // let re = /[A-Za-z]/g;
+
 // let re = /[^a-z]/ig;
+
 let re = /[^a-z0-9]/ig;
 console.log(myString.match(re));
+
+let email = "O@@@g...com O@g.com O@g.net A@Y.com O-g.com o@s.org 1@1.com";
+
+// let dot = /./g;
+// let re = /\w/g;
+// let re = /\W/g;
+
+// let valid = /\w+@\w+\.com/gi;
+
+let valid = /\w+@\w+\.(com|org|net)/gi;
+
+console.log(email.match(valid));

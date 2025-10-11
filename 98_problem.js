@@ -52,3 +52,15 @@ let email = "O@@@g...com O@g.com O@g.net A@Y.com O-g.com o@s.org 1@1.com";
 let valid = /\w+@\w+\.(com|org|net)/gi;
 
 console.log(email.match(valid));
+
+let names = "Sayed 1Spam 2Spam 3Spam Spam4 Spam5 Osama Ahmed Aspamo";
+// let re = /(\w+)?spam(\w+)?/gi;
+// let re = /\bspam\w+/gi;
+// let re = /\w+spam\b/gi;
+let re = /(\bspam\w+)|(\w+spam\b)/i;
+// let re = /(\bspam\w+)|(\w+spam\b)/ig;
+// console.log(names.match(re));
+console.log(re.test(names));
+console.log(re.test("khaled"));
+console.log(re.test("1spam"));
+console.log(re.test("spam8"));

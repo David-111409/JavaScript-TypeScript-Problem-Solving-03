@@ -58,3 +58,21 @@ console.log(acceptedWords(["cars", "trucks", "planes"]), [
   "trucks",
   "planes",
 ]);
+
+
+/**
+ formatNum(1000) ➞ "1,000"
+
+formatNum(100000) ➞ "100,000"
+
+formatNum(20) ➞ "20"
+ */
+const formatNum = (n) => {
+  return n.toLocaleString();
+};
+
+console.log(formatNum(1000), "1,000");
+console.log(formatNum(1000000), "1,000,000");
+console.log(formatNum(20), "20");
+console.log(formatNum(0), "0");
+console.log(formatNum(12948), "12,948");
